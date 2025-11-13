@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メンバー紹介 | カナリア軍団</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="members">
+    <header>
+      <div class="header-inner">
+        <div class="brand">
+          <span>Canary Army</span>
+          <span>カナリア軍団</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" data-page="home">HOME</a></li>
+            <li><a href="members.html" data-page="members">メンバー</a></li>
+            <li><a href="admin.html" data-page="admin">管理画面</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-inner">
+          <div class="section-header">
+            <h1>メンバー紹介</h1>
+            <p>
+              カナリア軍団で活躍するメンバーをご紹介します。ポジションや背番号で検索して、気になるメンバーをチェックしてみましょう。
+            </p>
+          </div>
+
+          <div class="member-controls">
+            <label>
+              ポジションで絞り込み
+              <select id="position-filter">
+                <option value="全て">全て</option>
+                <option value="投手">投手</option>
+                <option value="捕手">捕手</option>
+                <option value="内野手">内野手</option>
+                <option value="外野手">外野手</option>
+              </select>
+            </label>
+            <button class="btn btn-secondary" type="button" id="sort-number">背番号順（昇順）</button>
+          </div>
+
+          <div id="member-list" class="member-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© カナリア軍団 All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>

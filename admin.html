@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理画面 | カナリア軍団</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="admin">
+    <header>
+      <div class="header-inner">
+        <div class="brand">
+          <span>Canary Army</span>
+          <span>カナリア軍団</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" data-page="home">HOME</a></li>
+            <li><a href="members.html" data-page="members">メンバー</a></li>
+            <li><a href="admin.html" data-page="admin">管理画面</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-container">
+        <div class="login-box">
+          <h2>管理者ログイン</h2>
+          <p class="notice">※このログイン機能はデモ用であり、実際のセキュリティを保証するものではありません。</p>
+          <form id="login-form">
+            <div>
+              <label for="loginId">ログインID</label>
+              <input type="text" id="loginId" name="loginId" placeholder="admin" required />
+            </div>
+            <div>
+              <label for="password">パスワード</label>
+              <input type="password" id="password" name="password" placeholder="user" required />
+            </div>
+            <button class="btn btn-primary" type="submit">ログイン</button>
+          </form>
+        </div>
+
+        <div id="admin-area">
+          <section class="admin-section">
+            <h3>メンバー管理</h3>
+            <form id="member-form">
+              <div class="card-grid">
+                <label>
+                  背番号
+                  <input type="number" name="number" min="0" required />
+                </label>
+                <label>
+                  名前
+                  <input type="text" name="name" required />
+                </label>
+                <label>
+                  ポジション
+                  <select name="position" required>
+                    <option value="投手">投手</option>
+                    <option value="捕手">捕手</option>
+                    <option value="内野手">内野手</option>
+                    <option value="外野手">外野手</option>
+                  </select>
+                </label>
+                <label>
+                  打席・利き腕
+                  <input type="text" name="handed" placeholder="右投げ右打ち" />
+                </label>
+                <label>
+                  一言コメント
+                  <textarea name="comment" rows="3" placeholder="意気込みや特徴など"></textarea>
+                </label>
+                <label>
+                  写真URL
+                  <input type="url" name="photoUrl" placeholder="https://" />
+                </label>
+              </div>
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" type="submit">追加</button>
+                <button class="btn btn-secondary" type="button" id="member-reset">初期化</button>
+              </div>
+            </form>
+
+            <div class="table-wrapper" style="margin-top: 2rem;">
+              <table id="member-table">
+                <thead>
+                  <tr>
+                    <th>背番号</th>
+                    <th>名前</th>
+                    <th>ポジション</th>
+                    <th>打席・利き腕</th>
+                    <th>コメント</th>
+                    <th>写真</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="admin-section">
+            <h3>ギャラリー管理</h3>
+            <form id="gallery-form">
+              <div class="card-grid">
+                <label>
+                  画像URL
+                  <input type="url" name="imageUrl" placeholder="https://" />
+                </label>
+                <label>
+                  キャプション
+                  <input type="text" name="caption" placeholder="写真の説明" />
+                </label>
+                <label>
+                  画像ファイルアップロード
+                  <input type="file" id="gallery-file" accept="image/*" />
+                </label>
+              </div>
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" type="submit">追加</button>
+                <button class="btn btn-secondary" type="button" id="gallery-reset">初期化</button>
+              </div>
+            </form>
+
+            <div class="table-wrapper" style="margin-top: 2rem;">
+              <table id="gallery-table">
+                <thead>
+                  <tr>
+                    <th>サムネイル</th>
+                    <th>キャプション</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="admin-section">
+            <h3>お問い合わせ管理</h3>
+            <p class="notice">※このお問い合わせ管理はブラウザの localStorage を利用したデモ実装です。実運用ではサーバー側の仕組みが必要です。</p>
+            <div id="inquiry-list"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© カナリア軍団 All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>

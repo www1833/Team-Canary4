@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>カナリア軍団 | 草野球チーム公式サイト</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <header>
+      <div class="header-inner">
+        <div class="brand">
+          <span>Canary Army</span>
+          <span>カナリア軍団</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" data-page="home">HOME</a></li>
+            <li><a href="members.html" data-page="members">メンバー</a></li>
+            <li><a href="admin.html" data-page="admin">管理画面</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>ようこそ、草野球チーム『カナリア軍団』へ</h1>
+          <p>
+            横浜市旭区を拠点に活動する、黄色と緑のユニフォームがトレードマークの草野球チームです。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="members.html">メンバー紹介を見る</a>
+            <a class="btn btn-secondary" href="#contact">お問い合わせはこちら</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <div class="section-header">
+            <h2>チーム紹介</h2>
+            <p>
+              カナリア軍団は、幅広い年代のメンバーが集まり、和気あいあいとしながらも勝利にこだわる草野球チームです。練習と試合を通じて互いに学び合い、地域とのつながりを大切にしながら日々活動しています。初心者から経験者まで、やる気のある方ならどなたでも歓迎しています。
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-icon">S</div>
+              <h3>チームスピリット</h3>
+              <p>助け合いとチャレンジ精神を大切に、全員野球で戦います。</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">L</div>
+              <h3>地域密着</h3>
+              <p>横浜市旭区を中心に、地域イベントや交流試合にも積極的に参加。</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">G</div>
+              <h3>楽しさと成長</h3>
+              <p>楽しみながら上達できる環境を整え、個々の目標に寄り添います。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="alt-background">
+        <div class="section-inner">
+          <div class="section-header">
+            <h2>活動情報</h2>
+            <p>主な活動内容やスケジュールの一例をご紹介します。</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-icon">A</div>
+              <h3>活動エリア</h3>
+              <p>横浜市旭区内の公園野球場を中心に、近隣地域でも活動しています。</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">D</div>
+              <h3>活動曜日</h3>
+              <p>土日祝に練習・試合を行い、平日は自主トレメニューを共有。</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">F</div>
+              <h3>主な球場</h3>
+              <p>本宿公園野球場・若葉台公園野球場など、アクセスしやすい球場を利用。</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">P</div>
+              <h3>参加条件</h3>
+              <p>高校生以上で野球が好きな方。経験不問、見学も随時受け付けています。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <div class="section-header">
+            <h2>フォトギャラリー</h2>
+            <p>試合や練習風景の写真を掲載しています。</p>
+          </div>
+          <div id="gallery-grid" class="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="alt-background">
+        <div class="section-inner">
+          <div class="section-header">
+            <h2>お問い合わせ</h2>
+            <p>チームへの参加や練習試合のご相談など、お気軽にご連絡ください。</p>
+          </div>
+          <form id="contact-form">
+            <div>
+              <label for="name">名前</label>
+              <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+            </div>
+            <div>
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" placeholder="example@example.com" required />
+            </div>
+            <div>
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" placeholder="お問い合わせ内容をご入力ください" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">送信する</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="gallery-modal" class="modal-overlay" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="閉じる">&times;</button>
+        <img class="modal-image" src="" alt="" />
+        <div class="modal-body">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© カナリア軍団 All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>
