@@ -49,7 +49,7 @@ function structuredClone(data) {
 }
 
 // =============================================
-// デフォルトデータ
+// デフォルトデータ（メンバー）
 // =============================================
 function getDefaultMembers() {
   return [
@@ -107,7 +107,6 @@ function getDefaultMembers() {
       comment: "媚びぬ！退かぬ！省みぬ！",
       photoUrl: "https://www1833.github.io/Team-Canary4/images/araki.jpg",
     },
-    
     {
       id: 7,
       number: 7,
@@ -146,15 +145,10 @@ function getDefaultMembers() {
     },
   ];
 }
-  ];
-}
 
-  ];
-}
-  ];
-}
-
-
+// =============================================
+// デフォルトデータ（ギャラリー）
+// =============================================
 function getDefaultGallery() {
   return [
     {
@@ -598,7 +592,8 @@ function initAdminPage() {
     if (!inquiryContainer) return;
 
     if (inquiries.length === 0) {
-      inquiryContainer.innerHTML = '<div class="empty-state">現在お問い合わせはありません。</div>';
+      inquiryContainer.innerHTML =
+        '<div class="empty-state">現在お問い合わせはありません。</div>';
       return;
     }
 
@@ -622,7 +617,10 @@ function initAdminPage() {
       .sort((a, b) => a.submittedAt.localeCompare(b.submittedAt))
       .forEach((inquiry) => {
         const row = document.createElement("tr");
-        const shortenedMessage = inquiry.message.length > 40 ? `${inquiry.message.slice(0, 40)}…` : inquiry.message;
+        const shortenedMessage =
+          inquiry.message.length > 40
+            ? `${inquiry.message.slice(0, 40)}…`
+            : inquiry.message;
         row.innerHTML = `
           <td>${inquiry.submittedAt}</td>
           <td>${inquiry.name}</td>
