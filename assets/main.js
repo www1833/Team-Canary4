@@ -49,127 +49,88 @@ function structuredClone(data) {
 }
 
 // =============================================
-// デフォルトデータ（メンバー）
+// デフォルトデータ
 // =============================================
 function getDefaultMembers() {
   return [
     {
       id: 1,
       number: 1,
-      name: "五十嵐　優歩",
+      name: "山田 翔太",
       position: "投手",
       handed: "右投げ右打ち",
-      comment: "ポルシェ",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/igarashi.jpg",
+      comment: "速球と制球力でチームを牽引します。",
+      photoUrl: "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=700&q=80",
     },
     {
       id: 2,
-      number: 2,
-      name: "岩崎　航",
-      position: "内野手",
+      number: 10,
+      name: "佐藤 涼",
+      position: "捕手",
       handed: "右投げ右打ち",
-      comment: "※サイト管理者",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/iwasaki2.jpg",
+      comment: "冷静なリードで投手陣を支えます。",
+      photoUrl: "",
     },
     {
       id: 3,
-      number: 3,
-      name: "内田 良太",
-      position: "外野手",
-      handed: "右投げ右打ち",
-      comment: "ボーリング大会のみ参加します",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/uchida.jpg",
+      number: 6,
+      name: "中村 大和",
+      position: "内野手",
+      handed: "右投げ左打ち",
+      comment: "俊敏な守備と巧みなバットコントロールが武器。",
+      photoUrl: "https://images.unsplash.com/photo-1526676537331-774bb07a6f72?auto=format&fit=crop&w=700&q=80",
     },
     {
       id: 4,
-      number: 4,
-      name: "馬場　弦也",
-      position: "内野手",
-      handed: "左投げ右打ち",
-      comment: "レアキャラ",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/baba.jpg",
+      number: 25,
+      name: "井上 海斗",
+      position: "外野手",
+      handed: "左投げ左打ち",
+      comment: "広角に打ち分ける長距離砲。",
+      photoUrl: "",
     },
     {
       id: 5,
-      number: 5,
-      name: "井戸本　麻美",
+      number: 2,
+      name: "藤田 さくら",
       position: "内野手",
       handed: "右投げ右打ち",
-      comment: "Welcome to 野毛",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/asami.jpg",
+      comment: "明るい声かけと堅実な守備でムードメーカー。",
+      photoUrl: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=80",
     },
     {
       id: 6,
-      number: 6,
-      name: "荒木　潤平",
-      position: "捕手",
-      handed: "右投げ右打ち",
-      comment: "媚びぬ！退かぬ！省みぬ！",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/araki.jpg",
-    },
-    {
-      id: 7,
-      number: 7,
-      name: "長谷　悠樹",
+      number: 8,
+      name: "大島 翔",
       position: "外野手",
-      handed: "右投げ右打ち",
-      comment: "Ohana",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/nagatani3.jpg",
-    },
-    {
-      id: 8,
-      number: 9,
-      name: "井戸本　たけし",
-      position: "外野手",
-      handed: "右投げ左打ち",
-      comment: "夢にときめけ！ 明日にきらめけ！",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/takeshi.jpg",
-    },
-    {
-      id: 9,
-      number: 30,
-      name: "高橋　拓",
-      position: "投手",
-      handed: "左投げ左打ち",
-      comment: "好きな言葉「地主」",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/takahashi.jpg",
-    },
-    {
-      id: 10,
-      number: 10,
-      name: "宮城　有弥",
-      position: "内野手",
-      handed: "右投げ右打ち",
-      comment: "右打ちと目押しが得意",
-      photoUrl: "https://www1833.github.io/Team-Canary4/images/miyashiro.jpg",
+      handed: "両投げ両打ち",
+      comment: "俊足を生かした外野守備と盗塁が魅力。",
+      photoUrl: "",
     },
   ];
 }
 
-// =============================================
-// デフォルトデータ（ギャラリー）
-// =============================================
 function getDefaultGallery() {
   return [
     {
       id: 1,
-      imageUrl: "https://www1833.github.io/Team-Canary4/images/1.jpg",
-      caption: "バッティング練習",
+      imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80",
+      caption: "春季リーグ開幕戦",
     },
     {
       id: 2,
-      imageUrl: "https://www1833.github.io/Team-Canary4/images/2.jpg",
-      caption: "メンタルトレーニング",
+      imageUrl: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80",
+      caption: "夕暮れの守備練習",
     },
     {
       id: 3,
-      imageUrl: "https://www1833.github.io/Team-Canary4/images/3.jpg",
-      caption: "懇親会",
+      imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80",
+      caption: "勝利後の円陣",
     },
     {
       id: 4,
-      imageUrl: "https://www1833.github.io/Team-Canary4/images/4.jpg",
-      caption: "視察風景",
+      imageUrl: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9d8?auto=format&fit=crop&w=800&q=80",
+      caption: "新メンバー歓迎会",
     },
   ];
 }
@@ -592,8 +553,7 @@ function initAdminPage() {
     if (!inquiryContainer) return;
 
     if (inquiries.length === 0) {
-      inquiryContainer.innerHTML =
-        '<div class="empty-state">現在お問い合わせはありません。</div>';
+      inquiryContainer.innerHTML = '<div class="empty-state">現在お問い合わせはありません。</div>';
       return;
     }
 
@@ -617,10 +577,7 @@ function initAdminPage() {
       .sort((a, b) => a.submittedAt.localeCompare(b.submittedAt))
       .forEach((inquiry) => {
         const row = document.createElement("tr");
-        const shortenedMessage =
-          inquiry.message.length > 40
-            ? `${inquiry.message.slice(0, 40)}…`
-            : inquiry.message;
+        const shortenedMessage = inquiry.message.length > 40 ? `${inquiry.message.slice(0, 40)}…` : inquiry.message;
         row.innerHTML = `
           <td>${inquiry.submittedAt}</td>
           <td>${inquiry.name}</td>
