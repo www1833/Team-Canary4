@@ -114,23 +114,23 @@ function getDefaultGallery() {
   return [
     {
       id: 1,
-      imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80",
-      caption: "春季リーグ開幕戦",
+      imageUrl: "https://www1833.github.io/Team-Canary4/images/1.jpg",
+      caption: "バッティング練習",
     },
     {
       id: 2,
-      imageUrl: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80",
-      caption: "夕暮れの守備練習",
+      imageUrl: "https://www1833.github.io/Team-Canary4/images/2.jpg",
+      caption: "メンタルトレーニング",
     },
     {
       id: 3,
-      imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80",
-      caption: "勝利後の円陣",
+      imageUrl: "https://www1833.github.io/Team-Canary4/images/3.jpg",
+      caption: "懇親会",
     },
     {
       id: 4,
-      imageUrl: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9d8?auto=format&fit=crop&w=800&q=80",
-      caption: "新メンバー歓迎会",
+      imageUrl: "https://www1833.github.io/Team-Canary4/images/4.jpg",
+      caption: "視察風景",
     },
   ];
 }
