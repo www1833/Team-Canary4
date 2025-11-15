@@ -25,6 +25,7 @@
     </header>
 
     <main>
+      <!-- ヒーロー -->
       <section class="hero">
         <div class="hero-content">
           <h1>草野球チーム『カナリア軍団』</h1>
@@ -38,6 +39,7 @@
         </div>
       </section>
 
+      <!-- チーム紹介 -->
       <section>
         <div class="section-inner">
           <div class="section-header">
@@ -48,7 +50,7 @@
           </div>
           <div class="card-grid">
             <article class="card">
-              <div class="card-icon">fri</div>
+              <div class="card-icon">Fri</div>
               <h3>チームワーク</h3>
               <p>野球を通じて“仲の良さ”と“チームワーク”を育んでいます。</p>
             </article>
@@ -66,6 +68,7 @@
         </div>
       </section>
 
+      <!-- 活動情報 -->
       <section class="alt-background">
         <div class="section-inner">
           <div class="section-header">
@@ -97,16 +100,52 @@
         </div>
       </section>
 
+      <!-- フォトギャラリー（静的画像に変更） -->
       <section>
         <div class="section-inner">
           <div class="section-header">
             <h2>フォトギャラリー</h2>
-            <p>試合や練習風景の写真を掲載しています。</p>
+            <p>練習や日々の写真を掲載しています。</p>
           </div>
-          <div id="gallery-grid" class="gallery-grid"></div>
+
+          <!-- ★ ここを静的な画像4枚に変更 ★ -->
+          <div id="gallery-grid" class="gallery-grid">
+            <figure class="gallery-item">
+              <img
+                src="https://www1833.github.io/Team-Canary4/images/1.jpg"
+                alt="バッティング練習"
+              />
+              <figcaption>試合のワンシーン①</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="https://www1833.github.io/Team-Canary4/images/2.jpg"
+                alt="メンタルトレーニング"
+              />
+              <figcaption>試合のワンシーン②</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="https://www1833.github.io/Team-Canary4/images/3.jpg"
+                alt="懇親会"
+              />
+              <figcaption>練習風景①</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="https://www1833.github.io/Team-Canary4/images/3.jpg"
+                alt="視察風景"
+              />
+              <figcaption>練習風景②</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
+      <!-- お問い合わせ -->
       <section id="contact" class="alt-background">
         <div class="section-inner">
           <div class="section-header">
@@ -116,15 +155,32 @@
           <form id="contact-form">
             <div>
               <label for="name">名前</label>
-              <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="山田 太郎"
+                required
+              />
             </div>
             <div>
               <label for="email">メールアドレス</label>
-              <input type="email" id="email" name="email" placeholder="example@example.com" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+              />
             </div>
             <div>
               <label for="message">メッセージ</label>
-              <textarea id="message" name="message" placeholder="お問い合わせ内容をご入力ください" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="お問い合わせ内容をご入力ください"
+                required
+              ></textarea>
             </div>
             <button class="btn btn-primary" type="submit">送信する</button>
           </form>
@@ -132,7 +188,13 @@
       </section>
     </main>
 
-    <div id="gallery-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <!-- 画像拡大モーダル（JS側の既存機能を使う場合はそのまま） -->
+    <div
+      id="gallery-modal"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+    >
       <div class="modal-content">
         <button class="modal-close" aria-label="閉じる">&times;</button>
         <img class="modal-image" src="" alt="" />
